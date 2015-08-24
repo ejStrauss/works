@@ -1,0 +1,116 @@
+<script>
+var inheritance = "lock of Michael Jackson's hair from 1989 (just for playing)"
+var prize1 = "one of her old dangly diamond earrings";
+var prize2 = "diamond studded dog collar";
+var prize3 = "pair of long satin gloves";
+var prize4 = "250 shares of gold stock";
+var prize5 = "512 shares in agricultural peanut stock";
+var prize6 = "$500,000, * 2!!!";
+var finalAns = "SEX IS SOMETHING YOU DO AND LOVE IS SOMETHING MEN MADE UP SO THAT YOU'LL DO SEX WITH THEM"
+var questOne, questTwo, questThree, questFour, questFive, questFinal, name, retry;
+
+alert("xx- ELIZABETH TAYLOR'S POSTHUMOUS WILL -xx");
+alert("Elizabeth Taylor's unfortunate demise left thousands mournfully heart broken, and a few relatives and tiny spoiled dogs a good deal richer.  Now just a few years later, a new fortune has been discovered in her collection of old breadboxes (referred to as 'frosted pastry cabinets' by the late Ms. Taylor), with instructions to disperse it as such:");
+alert("'To whomever shall find this bounty: Throughout my life I have found my fans to be more faithfully devoted to me than all else, so to reward such dedication I have left behind this bit of wealth, but those to receive it must first prove they are worthy by correctly answering the following questions I came up with while sitting on the toilet...'");
+alert("Do you accept this challenge?");
+
+questOne = prompt("Which is more important, butter or salt?").toUpperCase();
+switch(questOne){
+	case "BUTTER":
+		alert("Correct!  Although she would have also accepted 'Salt' or 'Both.'  Elizabeth would like you to have " + prize1 + ".");
+		inheritance = (inheritance + ", and " + prize1);
+		break;
+
+	case "SALT":
+		alert("Correct! Although she would have also accepted 'Butter' or 'Both.'  Elizabeth would like you to have " + prize1 + ".");
+		inheritance = (inheritance + ", and " + prize1);
+		break;
+
+	default:
+		alert("Wrong.  Her heavenly wings droop in disappointment.");
+};
+
+questTwo = prompt("True or False: the best fragrances are those that smell like celebrities.").toUpperCase();
+	switch(questTwo){
+	case "TRUE":
+		alert("False!  Celine Dion smells like sausages and soured baby vomit.  Shania Twain smells like old dirt.  No matter how conveniently their 'Shania Starlight' or 'Magic Celine' perfumes are sold at your local Rite Aid, it is not worth the inconvenience of trying to explain why you smell bad to your therapist.");
+		break;
+
+	case "FALSE":
+		alert("Correct!  Better to smell of precious stones like white diamonds.  Elizabeth Taylor would like you to have her " + prize2 + ".");
+		inheritance = (inheritance + ", plus a " + prize2);
+		break;
+
+	default:
+		alert("Wrong.  She'd scold you for that answer but she's too dead to do so.");
+};
+
+questThree = prompt("Do doves really cry?","Type 'Yes' or 'No'").toUpperCase();
+switch(questThree){
+	case "YES":
+		alert("Wrong! Doves don't give a shit.");
+		break;
+
+	case "NO":
+		name = prompt("That's correct!  Doves don't give a shit.  Elizabeth would like to will you her " + prize3 + ", (these run on ebay for $20,0000), and to know your name.","What is your name, btw?");
+		inheritance = (inheritance + ", and her best " + prize3);
+		alert("Huh.  Not how I would have spelled it.  Well, nicely done, " + name + ".  So far you've convinced old E.T. to will you her " + inheritance + ".");
+		break;
+
+	default:
+		alert("Wrong! Wrong! Wrong!!!  Not even close!!!!  Elizabeth boos you from her blessed cloud above.");
+};
+
+questFour = prompt("Is world domination a sexual metaphor?","Type 'YES' or 'NO'").toUpperCase()
+switch(questFour){
+	case "YES":
+	 	alert("Correct.  Everything is.  You've finally gotten Liz's grave to stop weeping.  Here's " + prize4 + " as a reward.");
+	 	inheritance = (inheritance + ", and, get this, " + prize4);
+	 	break;
+
+	case "NO":
+	 	alert("Wrong.  Everything's a sexual metaphor.  Elizabeth grieves that all the world still does not know this, and now, her grave doth weep.");
+	 	break;
+
+	default:
+	 	alert("It's a simple yes or no question.  Elizabeth Taylor just told Michael Jackson that you must be the town fool, and her grave's begun to weep.");
+ };
+
+questFive = prompt("What is the most poetic sexual metaphor?").toUpperCase();
+switch(questFive){
+	case "GRAVE WEEPING":
+		alert("Correct!!!  Boy, you sure are a winner.  Here, please, take this.  It was Elizabeth's most prized possession: "  + prize5 + ".  It wasn't in the will, but she'd want you to have it.");
+		inheritance = (inheritance + ", and you gotta love these " + prize5);
+		break;
+
+	default:
+		retry = prompt("Sorry, but that's incorrect.  This is a hard one, though, so I'm going to give you another chance","Here's a hint: it's two words and has the initials 'G' and 'W'").toUpperCase();
+		if(retry === "GRAVE WEEPING"){
+			alert("Correct!!!  Boy, you sure are a winner.  Here, please, take this.  It was Elizabeth's most prized possession: "  + prize5 + ".  It wasn't in the will, but she'd want you to have it.");
+			inheritance = (inheritance + ", and you gotta love these " + prize5);
+		}else{
+			alert("Oops.  Still wrong, but I think I might have messed up your hint.  The answer is actually two words with the initials 'GRAVE' 'WEEPING'.  Here, have " + prize5 + " on me.");
+			inheritance = (inheritance + ", and you gotta love these " + prize5);
+		}
+	};
+
+alert("Here comes the grand finale...");
+questFinal = prompt("What is the difference between sex and love?").toUpperCase();
+switch(questFinal){
+	case finalAns:
+		alert("Sadly you are correct, although I don't neccessarily agree (since I met Andrew), but Elizabeth insists that it's true. Therefore your total walkaway is... a " + inheritance + ", plus your finale gift of $500,000 * 2!!!  Now go out and watch the greatest Elizabeth Taylor movie ever made, 'Suddenly, Last Summer'.");
+		break;
+
+	case finalAns + ".":
+		alert("Sadly you are correct, although I don't neccessarily agree (since I met Andrew), but Elizabeth insists that it's true. Therefore your total walkaway is... a " + inheritance + ", plus your finale gift of $500,000 * 2!!!  Now go out and watch the greatest Elizabeth Taylor movie ever made, 'Suddenly, Last Summer'.");
+		break;
+
+	default:
+		alert("I'm sorry, but the difference between sex and love is that sex is something you do and love is something men made up so that you'll do sex with them, although I don't necessarily agree (since I met Andrew), but Elizabeth insists it is true.");
+		alert("Alas, we've come to the final reading of the will.  Elizabeth Taylor bequeths onto you a " + inheritance + ".  So that's it!  You worked hard, you deserve it.  Now go out and watch the greatest Elizabeth Taylor movie ever made, 'Suddenly, Last Summer'.");
+};
+
+alert("*DISCLAIMER: absolutely everything in this game up until now has been a complete lie, except that the best Elizabeth Taylor movie of all-time is 'Suddenly, Last Summer', which was based on a one-act play by the greatest playwright who ever lived, Tennessee Williams.  Shakespeare can go suck an egg.  Thank you for playing!");
+alert("http://putlocker.is/watch-suddenly-last-summer-online-free-putlocker.html");
+
+</script>
